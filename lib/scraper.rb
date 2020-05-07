@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 
-html = open("https://flatironschool.com/")
+html = open("https://www.nba.com/lakers/roster?ls=nav_team")
 
 doc = Nokogiri::HTML(open("https://flatironschool.com/"))
 doc.css(".headline-26OIBN").text
